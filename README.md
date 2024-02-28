@@ -8,7 +8,13 @@ En este taller se debe crear un servidor web en Java, similar al tipo Apache. Es
 
 Desde algun browser, empezamos a probar las siguientes direcciones:
 
-http://localhost:35000/
+http://localhost:35000
+
+[![Search-Movies.png](https://i.postimg.cc/NfXH9Wrj/Search-Movies.png)](https://postimg.cc/dLq1gNBb)
+
+http://localhost:35000/Saturno
+
+[![Saturno-Movies.png](https://i.postimg.cc/T2FbPR1s/Saturno-Movies.png)](https://postimg.cc/kDNG1PxN)
 
 ## Arquitectura
 
