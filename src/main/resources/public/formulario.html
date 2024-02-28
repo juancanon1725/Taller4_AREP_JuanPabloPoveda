@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="contenedor">
+    <div class="sub">
+        <h1>Search Movies</h1>
+        <form action="/hello">
+            <label for="name">Search Movies:</label><br><br>
+            <input type="text" id="name" name="name" value="John"><br><br>
+            <input type="button" value="Submit" onclick="loadGetMsg()"><br><br>
+
+        </form>
+        <div id="getrespmsg"></div>
+        <script>
+            function loadGetMsg() {
+                let nameVar = document.getElementById("name").value;
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("getrespmsg").innerHTML =
+                    this.responseText;
+                }
+                xhttp.open("GET", "/info?title="+nameVar);
+                xhttp.send();
+            }
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

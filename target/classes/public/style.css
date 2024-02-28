@@ -1,0 +1,10 @@
+body{
+    background: #ea9999;
+    color: black;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: flex-start;;
+  align-items: flex-start;;
+}
